@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login">
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/edtTxt_username"
+        android:shadowColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="89dp"
+        android:textSize="22sp"
+        />
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/edtTxt_password"
+        android:shadowColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="89dp"
+        android:layout_below="@id/edtTxt_username"
+        android:textSize="22sp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#000000"
+        android:rotationX="3"
+        android:text="Login"
+
+        android:textSize="22sp" />
+</RelativeLayout>
